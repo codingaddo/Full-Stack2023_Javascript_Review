@@ -42,10 +42,6 @@ const movies =[
 
 ]
 
-
-
-
-
 //SPREAD OPERATOR
 
 //To update an array or add element to an array
