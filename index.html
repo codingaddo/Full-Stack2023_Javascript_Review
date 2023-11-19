@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/index.js" defer></script>
 </head>
 <body>
     <h1 class="output">0</h1>
-    <button class="sub">-</button>
     <button class="add">+</button>
+    <button class="sub">-</button>
     <button class="reset">Reset</button>
+
+    <script>
+        //Manually Selcting DOM Elements
+            const addBtn = document.querySelector(".add")
+            const subBtn = document.querySelector(".sub")
+            const num = document.querySelector(".output")
+            const resetNumber = document.querySelector(".reset")
+
+            //Setting initail value
+            let count = 0
+
+            const add = () => {
+                //Manually updating values
+                count = count + 1
+
+
+                //Manually updating DOM elements
+                num.innerHTML = output
+            }
+
+            const subtract = () => {
+                count = count - 1
+                num.innerHTML = count
+            }
+
+            const reset = () => {
+                count = 0
+                num.innerHTML = count
+            }
+
+            //Attaching event listner
+            addBtn.addEventListener('click', add)
+            subBtn.addEventListener('click', subtract)
+            resetNumber.addEventListener('click', reset)
+    </script>
 </body>
 </html>

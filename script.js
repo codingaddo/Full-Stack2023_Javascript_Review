@@ -44,32 +44,34 @@ const movies =[
 
 //SPREAD OPERATOR
 
-//To update an array or add element to an array
-const updatedMovies = [...movies,{id:7,title:'Hello'}]
 // console.log(movies)
-// console.log(updatedMovies)
+// const updatorMovies = [...movies,{id:6,title:'Avatar',genre:'Dram'}]
+// console.log(updatorMovies)
+
+
+//To update an array or add element to an array
+// const updatorMovies = [...movies,{id:6,title:'Avatar',genre:'Dram'}]
 
 
 //To change a property of an object 
-const x = movies.map((movie)=>movie.id===1?{...movie,genre:'Love'}:movie)
-console.log(x)
-
+// const changeValue = movies.map((movie)=>movie.id===0?{...movie,genre:'Love'}:movie)
+// console.log(changeValue)
 
 // Tenary Operator
-let num = 5
-// if(num<=5){
-//     console.log('True')
-// }
-// else{
-//     console.log('false')
-// }
 
-num<=7?console.log('True'):console.log('false')
+
+let a = true
+// a===true?console.log('True'):console.log('False')
+
+// if(a===true){
+//     console.log('True')
+// }else{
+//     console.log('False')
+// }
 
 
 
 //Short Circuiting and Logical Operators
 
-num <=1 && console.log('True')
-
+a && console.log('True')
 
